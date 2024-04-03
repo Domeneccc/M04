@@ -6,7 +6,7 @@
 ## Index
 
 1. XML
-   - Explicació bàsica d'XML i el que farem
+   - Explicació bàsica  el que farem amb XML
 3. DOM
    - Explicació deL funcionament DOM
    - Exemples de minidom amb Python 
@@ -22,6 +22,4 @@
 
 ## Explicació bàsica d'XML i el que farem
 
-**texto**
-*texto*
-_texto_
+Para comenzar en la uf 2 de XML hare 
