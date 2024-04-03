@@ -8,11 +8,11 @@
 1. XML
    - Explicació bàsica d'XML i el que farem
 3. DOM
-   - Explicació deL funcionamet DOM
-   - Exemples de minidom amb python 
+   - Explicació deL funcionament DOM
+   - Exemples de minidom amb Python 
 5. XLT i XPath
-   - Explicacio de XPath
+   - Explicació de XPath
    - Exemples de XPath
-   - Explicacio de XSLT amb teoria
+   - Explicació de XSLT amb teoria
    - Exemples de XSLT
    
