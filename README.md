@@ -23,3 +23,5 @@
 ## Explicació bàsica d'XML i el que farem
 
 **texto**
+*texto*
+_texto_
