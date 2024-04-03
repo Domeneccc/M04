@@ -16,3 +16,10 @@
    - Explicació de XSLT amb teoria
    - Exemples de XSLT
    
+
+
+# XML
+
+## Explicació bàsica d'XML i el que farem
+
+**texto**
