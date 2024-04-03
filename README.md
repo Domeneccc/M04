@@ -11,8 +11,8 @@
    - Explicació deL funcionamet DOM
    - Exemples de minidom amb python 
 5. XLT i XPath
-   -Explicacio de XPath
-   -Exemples de XPath
-   -Explicacio de XSLT amb teoria
-   -Exemples de XSLT
+   - Explicacio de XPath
+   - Exemples de XPath
+   - Explicacio de XSLT amb teoria
+   - Exemples de XSLT
    
