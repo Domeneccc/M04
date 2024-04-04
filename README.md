@@ -30,7 +30,7 @@ Para comenzar en la uf 2 de **XML** entra Dom que es fa amb python que hi hauran
 
 # XSLT i XPath
 
-## XSLT 
+## Explicació de XSLT amb teoria
 
 ### Què és XSLT?
 
@@ -98,3 +98,98 @@ L'element `<xsl:choose>`
 L'element `<xsl:choose>` es fa servir junt amb el element `<xsl:when>` 
 
 Hi ha mes imformacio en el  w3schools: https://www.w3schools.com/xml/xsl_intro.asp
+
+## Exemples de XSLT
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:output method="html" indent="yes"/>
+    <xsl:template match="/horari">
+        <html>
+            <head>
+                <style>
+                    .body {
+                        background-color: rgb(230, 230, 230);
+                    }
+                    .foto_cabeza{
+                        width: 100%;
+                        height: 20%;
+                    }
+                    .tabla {
+                        width: 100%;
+                        text-align: center;
+                        border-collapse: collapse;
+                    }
+                    .dias_semana{
+                        background-color: rgb(200, 200, 200);
+                        
+                    }
+                    .lista {
+                        text-align: center;
+
+                    }
+                    .titol {
+                        margin: 0px;
+                    }
+                    <xsl:for-each select="colors/color">
+                        .<xsl:value-of select="@codi"/> {background-color: <xsl:value-of select="."/>; 
+                        padding: 15px; 
+                        margin: 3px; 
+                        }
+                     </xsl:for-each>
+                     .links {
+                        color: rgb(0, 0, 0)
+                        
+                     }
+                     .links:visited  {
+                        color: rgb(0, 0, 0)
+                        
+                     }
+                     .lista_links {
+                        padding: 5px;
+                        list-style-type: none;
+                     }
+                </style>
+            </head>
+            <body class="body">
+                <img src="{@header}" alt="Imagen de Encabezado" class="foto_cabeza" />
+                <table class="tabla">
+                    <tr>
+                        <xsl:for-each select="setmana/dia">
+                            <th class="dias_semana" >
+                                <xsl:value-of select="@nom"/>
+                            </th>
+                        </xsl:for-each>
+                    </tr> 
+                    <tr>
+                        <xsl:for-each select="setmana/dia">
+                            <td>
+                                <xsl:for-each select="modul">
+                                    <p class="{codi}" xml:space="preserve">
+                                        <xsl:value-of select="codi"/>  <xsl:value-of select="nom"/> 
+                                    </p>
+                                </xsl:for-each>
+                            </td>
+                        </xsl:for-each>
+                    </tr>
+                </table>
+                <ul class="lista">
+                    <h1 class="titol"><xsl:value-of select="links/@nom"/></h1>
+                   <xsl:for-each select="/horari/links">
+                            
+                                <xsl:for-each select="link">
+                                <xsl:sort select="nom"/>
+                                    <li class="lista_links">
+                                        <a href="{url}" class="links" target="_blank">
+                                            <xsl:value-of select="nom"/> <br/>
+                                        </a>
+                                    </li>
+                                </xsl:for-each>
+                    </xsl:for-each>
+                </ul>
+            </body>
+        </html>
+    </xsl:template>
+</xsl:stylesheet>
+```
+
