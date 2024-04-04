@@ -51,7 +51,7 @@ Exemple Firefox:
    Firefox: accedim a about:config i canviem la directiva
    security.fileuri.strict_origin_policy -> false
 
-### CREACIÓ DOCUMENT XSL 
+### creació de un document xsl
 
 Per començar a fer un document **XML** es te que comenzar creant un document amb extenci xsl y posar el seguent codi
 ```
