@@ -165,7 +165,7 @@ Exemple:
 ```
 <xsl:template match="/">
 El codi que hi fagi falta
-<xsl:template match="/">`
+<xsl:template />`
 ```
 L'element `<xsl:value-of>`
 
