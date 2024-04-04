@@ -97,7 +97,7 @@ L'element `<xsl:choose>`
 
 L'element <xsl:choose> es fa servir junt amb el element `<xsl:when>` 
 
-Hi ha mes imformacio en el  (w3school(https://www.w3schools.com/xml/xsl_intro.asp))
+Hi ha mes imformacio en el  [w3school](https://www.w3schools.com/xml/xsl_intro.asp)
 
 ## Exemples de XSLT
 ```
