@@ -212,11 +212,11 @@ L'element <xsl: value-of> s'utilitza per extreure el valor d’un node seleccion
 L'element `<xsl:for-each>`
 
 L'element <xsl: for-each> ens permet fer bucles en XSLT es a dir que fa les iteraccions que hi hagi en el document xml
-   -Tambe pot haber-hi condicions dindre del bucle es a dir que pot haber les seguents coses:
-      - = (igual)
-      - ! = (no és igual)
-      - & lt; menys que
-      - & gt; més gran que
+Tambe pot haber-hi condicions dindre del bucle es a dir que pot haber les seguents coses:
+   - = (igual)
+   - ! = (no és igual)
+   - & lt; menys que
+   - & gt; més gran que
 
 L'element `<xsl:sort>`
 
