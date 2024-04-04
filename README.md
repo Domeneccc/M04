@@ -29,7 +29,7 @@ Para comenzar en la uf 2 de **XML** entra Dom que es fa amb python que hi hauran
 # DOM
 ## Que es?
 
-DOM són les sigles en anglès de "Document Object Model" (Model d'Objectes del Document). Serveix per a manipular objectes d'un document xml que permet accedir a les dades. I amb estructura de arbol. Defineix un standar per a accedir als documents
+DOM són les sigles en anglès de "Document Object Model" (Model d'Objectes del Document). Serveix per a manipular objectes d'un document xml que permet accedir a les dades. I amb estructura d' arbre. Defineix un standar per a accedir als documents
 
 
 ![image](https://github.com/Domeneccc/M04/assets/165904493/d12e9ae6-e39b-45da-a151-0708da1b193b)
