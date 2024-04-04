@@ -122,6 +122,9 @@ else:
 L' [XPhath](http://xpather.com) (XML Path Language) és un llenguatge utilitzat per localitzar i seleccionar elements en documents XML o HTML. Es basa en l'expressió de camins o rutes com si fora linux amb cd
 
 
+considera un document XML com un arbre de nodes. En Informàtica, un arbre és una estructura de dades que equival a un arbre matemàtic. En Matemàtiques un arbre és un cas particular de graf. Els següents termes definits en teoria de grafs s'utilitzen també en Informàtica i en XPath
+
+
 ![image](https://github.com/Domeneccc/M04/assets/165904493/f864df55-e184-4049-9967-9adf800b5083)
 
 ## Exemples de XPath
