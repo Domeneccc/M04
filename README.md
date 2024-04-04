@@ -1,5 +1,6 @@
 # Apunts de M04 en Markdown
 
+![image](https://github.com/Domeneccc/M04/assets/165904493/1cb42b5f-6a84-4657-a8a7-14be1d0586e4)
 
 
 
@@ -26,7 +27,92 @@ Para comenzar en la uf 2 de **XML** entra Dom que es fa amb python que hi hauran
 
 
 # DOM
+## Que es?
 
+DOM són les sigles en anglès de "Document Object Model" (Model d'Objectes del Document). Serveix per a manipular objectes d'un document xml que permet accedir a les dades. I amb estructura de arbol. Defineix un standar per a accedir als documents
+
+
+![image](https://github.com/Domeneccc/M04/assets/165904493/d12e9ae6-e39b-45da-a151-0708da1b193b)
+
+
+
+
+## Les Propietats del DOM
+
+
+   - childNodes - Retorna una col·lecció dels fills de l'element especificat en forma d'objectes Node.
+   - parentNode - Retorna l'element pare de l'element especificat.
+   - firstChild - Retorna el primer fill de l'element especificat.
+   - lastChild - Retorna l'últim fill de l'element especificat.
+   - nodeName - Retorna el nom de l'etiqueta de l'element especificat.
+   - nodeType - Retorna el tipus de node de l'element especificat.
+   - nodeValue - Retorna o defineix el valor de l'atribut node.
+
+Exemples: 
+Aixo saca tots els nodes que tenen el nombre _nom_
+
+`x.getElementByTagName("nom").firstChild.data`
+
+
+## Accedir a Nodes
+
+Per poder accedir als nodes es pot utilizar varias coses com:
+
+   - x.getElementById
+   - x.getElementsByTagName
+   - x.getElementsByClassName
+
+Puedes crear ua lista con `getElementsByTagName()` y te crea una lista que con eso puedes trabajar.
+
+`lista = getElementsByTagName(x)`
+
+
+Exemple DOM amb Python
+
+```
+from xml.dom import minidom
+
+doc = minidom.parse("universitat.xml")
+
+alumnas = {}
+
+arrel = doc.documentElement.localName
+lista_alumna = doc.getElementsByTagName("persona")
+
+
+
+
+for person in lista_alumna:
+    nom = person.getElementsByTagName("nom")[0].firstChild.data
+    cognoms = person.getElementsByTagName("cognoms")[0].firstChild.data
+    nom_complet = nom +"-"+ cognoms
+    edad = person.getElementsByTagName("edat")[0].firstChild.data
+    lista_asignatura = person.getElementsByTagName("assignatura")
+    assignaturass = []
+    for assignatura in lista_asignatura:
+             assignaturass.append(assignatura.firstChild.data)
+        
+    alumnas[nom_complet] = {
+                "Edat": edad,
+                "assignaturas":assignaturass}
+    
+asignatura_a_buscar = input("Introduce el nombre de la asignatura que quieres consultar: ")
+
+   
+personas_matriculadas = []
+for alumna, datos in alumnas.items():
+    if asignatura_a_buscar in datos["assignaturas"]:
+        personas_matriculadas.append(alumna)
+
+if personas_matriculadas:
+    print(f"Personas matriculadas en '{asignatura_a_buscar}':")
+    for persona in personas_matriculadas:
+        print(persona)
+else:
+    print(f"No hay personas matriculadas en '{asignatura_a_buscar}'.")
+
+```
+   
 
 # XSLT i XPath
 
