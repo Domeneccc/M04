@@ -54,12 +54,12 @@ Exemple Firefox:
 ### CREACIÓ DOCUMENT XSL 
 
 Per començar a fer un document **XML** es te que comenzar creant un document amb extenci xsl y posar el seguent codi
-
+```
 `<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 ....
 </xsl:stylesheet>`
-
+```
 Y despres hi ha que conectar el **XML** amb el **XSL**  posant-ho al **XML** amb el següent:
 
 `<?xml version="1.0" encoding="UTF-8"?>
@@ -71,38 +71,14 @@ L'element `<xsl:template>`:
 
 L'element <xsl: template> s'utilitza per crear plantilles es a dir que es la base de un **XSL**, s'utilitza el match per asociar-se amb el xml.
 Exemple:
-
-`<xsl:template match="/">
+```
+<xsl:template match="/">
 El codi que hi fagi falta
 <xsl:template match="/">`
-
+```
 L'element `<xsl:value-of>`
 
 L'element <xsl: value-of> s'utilitza per extreure el valor d’un node seleccionat.
-
-Exemple: 
- ```
-<?xml version="1.0" encoding="UTF-8"?>
-   <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform ">
-      <xsl:template match="/">
-         <html>
-            <body>
-               <h2>My CD Collection </h2>
-               <table>
-                  <tr>
-                     <th>Title</th>
-                     <th>Artist</th>
-                  </tr>
-                  <tr>
-                     <td><xsl:value-of select="catalog/cd/title"/></td>
-                     <td><xsl:value-of select="catalog/cd/artist"/></td>
-                  </tr>
-               </table>
-            </body>
-         </html>
-      </xsl:template>
-   </xsl:stylesheet >
-```
 
 L'element `<xsl:for-each>`
 
@@ -113,31 +89,12 @@ L'element <xsl: for-each> ens permet fer bucles en XSLT es a dir que fa les iter
       - & lt; menys que
       - & gt; més gran que
 
-Exemple:
-```
-  <?xml version="1.0" encoding="UTF-8"?>
-   <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform ">
-   <xsl:template match="/">
-      <html>
-         <body>
-            <h2>My CD Collection </h2>
-            <table>
-               <tr>
-                  <th>Title</th>
-                  <th>Artist</th>
-               </tr>
-               <xsl:for-each select="catalog/cd">
-                  <tr>
-                     <td><xsl:value-of select="title"/></td>
-                     <td><xsl:value-of select="artist"/></td>
-                  </tr>
-               </xsl:for-each>
-            </table>
-         </body>
-      </html>
-   </xsl:template>
-   </xsl:stylesheet >
-```
+L'element `<xsl:sort>`
 
-   
+Serveix per a ordenar de diferents formes tant alfabeticament com numerica.
 
+L'element `<xsl:choose>`
+
+L'element `<xsl:choose>` es fa servir junt amb el element `<xsl:when>` 
+
+Hi ha mes imformacio en el ! w3schoolshttps://www.w3schools.com/xml/xsl_intro.asp
