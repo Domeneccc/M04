@@ -63,9 +63,79 @@ Per començar a fer un document **XML** es te que comenzar creant un document am
 Y despres hi ha que conectar el **XML** amb el **XSL**  posant-ho al **XML** amb el següent:
 
 `<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="fitxer.xsl"?>`
+<xml-stylesheet type="text/xsl" href="fitxer.xsl"?>`
 
+### Explicacio dels diferents elements d'un XSL
 
+L'element `<xsl:template>`:
 
+L'element <xsl: template> s'utilitza per crear plantilles es a dir que es la base de un **XSL**, s'utilitza el match per asociar-se amb el xml.
+Exemple:
 
+`<xsl:template match="/">
+El codi que hi fagi falta
+<xsl:template match="/">`
+
+L'element `<xsl:value-of>`
+
+L'element <xsl: value-of> s'utilitza per extreure el valor d’un node seleccionat.
+
+Exemple: 
+
+  `<?xml version="1.0" encoding="UTF-8"?>
+   <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform ">
+      <xsl:template match="/">
+         <html>
+            <body>
+               <h2>My CD Collection </h2>
+               <table>
+                  <tr>
+                     <th>Title</th>
+                     <th>Artist</th>
+                  </tr>
+                  <tr>
+                     <td><xsl:value-of select="catalog/cd/title"/></td>
+                     <td><xsl:value-of select="catalog/cd/artist"/></td>
+                  </tr>
+               </table>
+            </body>
+         </html>
+      </xsl:template>
+   </xsl:stylesheet >`
+
+L'element `<xsl:for-each>`
+
+L'element <xsl: for-each> ens permet fer bucles en XSLT es a dir que fa les iteraccions que hi hagi en el document xml
+   -Tambe pot haber-hi condicions dindre del bucle es a dir que pot haber les seguents coses:
+      - = (igual)
+      - ! = (no és igual)
+      - & lt; menys que
+      - & gt; més gran que
+
+Exemple:
+
+  `<?xml version="1.0" encoding="UTF-8"?>
+   <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform ">
+   <xsl:template match="/">
+      <html>
+         <body>
+            <h2>My CD Collection </h2>
+            <table>
+               <tr>
+                  <th>Title</th>
+                  <th>Artist</th>
+               </tr>
+               <xsl:for-each select="catalog/cd">
+                  <tr>
+                     <td><xsl:value-of select="title"/></td>
+                     <td><xsl:value-of select="artist"/></td>
+                  </tr>
+               </xsl:for-each>
+            </table>
+         </body>
+      </html>
+   </xsl:template>
+   </xsl:stylesheet >`
+
+   
 
