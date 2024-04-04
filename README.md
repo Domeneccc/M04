@@ -9,8 +9,10 @@
 1. XML
    - Explicació bàsica  el que farem amb XML
 3. DOM
-   - Explicació deL funcionament DOM
-   - Exemples de minidom amb Python 
+   - Que es?
+   - Les Propietats del DOM
+   - Accedir a Nodes
+   - Exemple DOM amb Python 
 5. XSLT i XPath
    - Explicació de XPath
    - Exemples de XPath
@@ -67,7 +69,7 @@ Puedes crear ua lista con `getElementsByTagName()` y te crea una lista que con e
 `lista = getElementsByTagName(x)`
 
 
-Exemple DOM amb Python
+## Exemple DOM amb Python
 
 ```
 from xml.dom import minidom
