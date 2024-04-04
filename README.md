@@ -62,7 +62,7 @@ Per poder accedir als nodes es pot utilizar varias coses com:
    - x.getElementsByTagName
    - x.getElementsByClassName
 
-Puedes crear ua lista con `getElementsByTagName()` y te crea una lista que con eso puedes trabajar.
+Puedes crear ua lista con `getElementsByTagName()` y te crea una _lista_ que con eso puedes trabajar.
 
 `lista = getElementsByTagName(x)`
 
