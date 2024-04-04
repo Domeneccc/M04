@@ -39,7 +39,26 @@ El XSLT ve de eXtensible Stylesheet Language Transformations que significa que e
 
 
 
-Els navegador webs més habituals (Safari, Chrome, Firefox, microsoft Edge, Opera,...) porten un processador de XSLT incorporat, pero hi ha que activar un 
+Els navegador webs més habituals (Safari, Chrome, Firefox, microsoft Edge, Opera,...) porten un processador de XSLT incorporat, pero hi ha que activar una opcio especial per poder ver-lo en els navegadors
+
+Exemple Chrome:
+
+   Google chrome: Obrim el navegador amb la instrucció
+   google-chrome --disable-web-security --allow-file-access-from-files
+   
+Exemple Firefox:
+
+   Firefox: accedim a about:config i canviem la directiva
+   security.fileuri.strict_origin_policy -> false
+
+### CREACIÓ DOCUMENT XSL 
+
+Per començar a fer un document **XML** es te que comenzar creant un document amb extenci xsl y posar el seguent codi
+
+`<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+....
+</xsl:stylesheet>`
 
 
 
