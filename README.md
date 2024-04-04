@@ -22,7 +22,7 @@
 
 ## Explicació bàsica d'XML i el que farem
 
-Para comenzar en la uf 2 de XML entra Dom que es fa amb python que hi hauran varis exemples de ejercicis, despres tambe hi ha xslt amb xpath cada un explicats 
+Para comenzar en la uf 2 de **XML** entra Dom que es fa amb python que hi hauran varis exemples de ejercicis, despres tambe hi ha **xslt** amb xpath cada un explicats 
 
 
 # DOM
@@ -34,7 +34,7 @@ Para comenzar en la uf 2 de XML entra Dom que es fa amb python que hi hauran var
 
 ### Què és XSLT?
 
-El XSLT ve de eXtensible Stylesheet Language Transformations que significa que es un lleguatge que serveix per donar estill a un document xml que es com el css del html per es oer al xml. Normalment el arxiu que son de entrada son xml, també poden ser altres tipus de formats. Hi ha processadors de XSLT en llenguatges com C, C++, Java, Python, Perl, Javascript.
+El **XSLT** ve de eXtensible Stylesheet Language Transformations que significa que es un lleguatge que serveix per donar estill a un document xml que es com el css del html per es oer al **xml**. Normalment el arxiu que son de entrada son xml, també poden ser altres tipus de formats. Hi ha processadors de XSLT en llenguatges com C, C++, Java, Python, Perl, Javascript.
 ![image](https://github.com/Domeneccc/M04/assets/165904493/4ca58661-f272-4cc6-bfe5-b6eacf3934a6)
 
 
@@ -59,6 +59,12 @@ Per començar a fer un document **XML** es te que comenzar creant un document am
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 ....
 </xsl:stylesheet>`
+
+Y despres hi ha que conectar el **XML** amb el **XSL**  posant-ho al **XML** amb el següent:
+
+`<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="fitxer.xsl"?>`
+
 
 
 
