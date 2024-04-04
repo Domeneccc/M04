@@ -37,8 +37,6 @@ DOM són les sigles en anglès de "Document Object Model" (Model d'Objectes del 
 ![image](https://github.com/Domeneccc/M04/assets/165904493/d12e9ae6-e39b-45da-a151-0708da1b193b)
 
 
-
-
 ## Les Propietats del DOM
 
 
@@ -121,9 +119,37 @@ else:
 ## Que es Xpath ?
 
 
-L'XPath (XML Path Language) és un llenguatge utilitzat per localitzar i seleccionar elements en documents XML o HTML. Es basa en l'expressió de camins o rutes com si fora linux amb cd 
+L' [XPhath](http://xpather.com) (XML Path Language) és un llenguatge utilitzat per localitzar i seleccionar elements en documents XML o HTML. Es basa en l'expressió de camins o rutes com si fora linux amb cd
 
-[XPhath](http://xpather.com)
+
+![image](https://github.com/Domeneccc/M04/assets/165904493/f864df55-e184-4049-9967-9adf800b5083)
+
+## Exemples de XPath
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+  <libro>
+    <titulo>La vida está en otra parte</titulo>
+    <autor>Milan Kundera</autor>
+    <fechaPublicacion año="1973"/>
+  </libro>
+  <libro>
+    <titulo>Pantaleón y las visitadoras</titulo>
+    <autor fechaNacimiento="28/03/1936">Mario Vargas Llosa</autor>
+    <fechaPublicacion año="1973"/>
+  </libro>
+  <libro>
+    <titulo>Conversación en la catedral</titulo>
+    <autor fechaNacimiento="28/03/1936">Mario Vargas Llosa</autor>
+    <fechaPublicacion año="1969"/>
+  </libro>
+</biblioteca>
+
+```
+
+
+
 
 ## Explicació de XSLT amb teoria
 
