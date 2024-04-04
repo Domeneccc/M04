@@ -102,6 +102,7 @@ Exemple:
          </html>
       </xsl:template>
    </xsl:stylesheet >
+```
 
 L'element `<xsl:for-each>`
 
@@ -113,8 +114,8 @@ L'element <xsl: for-each> ens permet fer bucles en XSLT es a dir que fa les iter
       - & gt; més gran que
 
 Exemple:
-
-  `<?xml version="1.0" encoding="UTF-8"?>
+```
+  <?xml version="1.0" encoding="UTF-8"?>
    <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform ">
    <xsl:template match="/">
       <html>
@@ -135,7 +136,8 @@ Exemple:
          </body>
       </html>
    </xsl:template>
-   </xsl:stylesheet >`
+   </xsl:stylesheet >
+```
 
    
 
