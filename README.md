@@ -35,7 +35,12 @@ Para comenzar en la uf 2 de **XML** entra Dom que es fa amb python que hi hauran
 ### Què és XSLT?
 
 El **XSLT** ve de eXtensible Stylesheet Language Transformations que significa que es un lleguatge que serveix per donar estill a un document xml que es com el css del html per es oer al **xml**. Normalment el arxiu que son de entrada son xml, també poden ser altres tipus de formats. Hi ha processadors de XSLT en llenguatges com C, C++, Java, Python, Perl, Javascript.
-![image](https://github.com/Domeneccc/M04/assets/165904493/4ca58661-f272-4cc6-bfe5-b6eacf3934a6)
+
+
+![image](https://github.com/Domeneccc/M04/assets/165904493/192759e7-ea1d-42ea-93d3-c93855a6744a)
+
+
+
 
 
 
