@@ -121,6 +121,8 @@ else:
 ## Que es Xpath ?
 
 
+L'XPath (XML Path Language) és un llenguatge utilitzat per localitzar i seleccionar elements en documents XML o HTML. Es basa en l'expressió de camins o rutes com si fora linux amb cd 
+
 [XPhath](http://xpather.com)
 
 ## Explicació de XSLT amb teoria
