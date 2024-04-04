@@ -9,12 +9,12 @@
 1. XML
    - Explicació bàsica  el que farem amb XML
 3. DOM
-   - Que es?
+   - Que es ?
    - Les Propietats del DOM
    - Accedir a Nodes
    - Exemple DOM amb Python 
 5. XSLT i XPath
-   - Explicació de XPath
+   - Que es Xpath ?
    - Exemples de XPath
    - Explicació de XSLT amb teoria
    - Exemples de XSLT
@@ -117,6 +117,11 @@ else:
    
 
 # XSLT i XPath
+
+## Que es Xpath ?
+
+
+[XPhath](http://xpather.com)
 
 ## Explicació de XSLT amb teoria
 
