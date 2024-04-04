@@ -198,7 +198,7 @@ Y despres hi ha que conectar el **XML** amb el **XSL**  posant-ho al **XML** amb
 
 L'element `<xsl:template>`:
 
-L'element <xsl: template> s'utilitza per crear plantilles es a dir que es la base de un **XSL**, s'utilitza el match per asociar-se amb el xml.
+L'element <xsl: template> s'utilitza per crear plantilles es a dir que es la base de un **XSL**, s'utilitza el match per asociar-se amb el _xml_.
 Exemple:
 ```
 <xsl:template match="/">
